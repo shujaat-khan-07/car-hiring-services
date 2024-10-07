@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Hiring Application</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Car Hiring Service</h1>
+      
+    </header>
+    <h2><u>AVAILABLE CARS </u></h2>
+    <main>
+        <section id="car-list">
+           
+            <div class="car" id="car1">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>Price: $150/day</p>
+                <button onclick="bookCar('Car Model 1')">Book Now</button>
+            </div>
+            <div class="car" id="car2">
+                <img src="car2.jpg" alt="car 2">
+                <h3>Car Model 2</h3>
+                <p>Price: $200/day</p>
+                <button onclick="bookCar('Car Model 2')">Book Now</button>
+            </div>
+            <div class="car" id="car3">
+                <img src="car3.jpg" alt="Car 3">
+                <h3>Car Model 3</h3>
+                <p>Price: $300/day</p>
+                <button onclick="bookCar('Car Model 3')">Book Now</button>
+            </div>
+            <div class="car" id="car4">
+                <img src="car4.jpg" alt="Car 4">
+                <h3>Car Model 4</h3>
+                <p>Price: $500/day</p>
+                <button onclick="bookCar('Car Model 4')">Book Now</button>
+            </div>
+            
+        </section>
+        <section id="booking-form">
+            <h2><u> BOOKING FORM </u></h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="car">Select Car:</label>
+                <select id="car" required>
+                    <option value="Car Model 1">Car Model 1</option>
+                    <option value="Car Model 2">Car Model 2</option>
+                    <option value="Car Model 3">Car Model 3</option>
+                    <option value="Car Model 4">Car Model 4</option>
+
+                </select>
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Hiring Service. All rights reserved.</p>
+    </footer>
+    <script src="car.js"></script>
+</body>
+</html>
